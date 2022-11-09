@@ -128,10 +128,9 @@ void testeToStringImprimir()
   verifica(fila_inserir(f, 5), "Inserir 5");
   verifica(fila_inserir(f, 6), "Inserir 6");
 
-  char *saida;
+  char saida[100] = "";
   verifica(fila_toString(f, saida), "To String");
   printf("Fila: %s\n", saida);
-  free(saida);
 
   fila_imprimir(f);
 
